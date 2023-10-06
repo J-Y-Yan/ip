@@ -4,14 +4,13 @@ package commandFormat;
 public class CommandFormat {
 
     public static String formattedCommand(String cmd){
-        cmd = cmd.trim().toLowerCase(); //small letter and remove front and back space
-        cmd = cmd.replaceAll("\\s+", " ");   //remove if consecutive space
+        cmd = cmd.trim().toLowerCase();
+        cmd = cmd.replaceAll("\\s+", " ");
 
         return cmd;
     }
 
     public static int getTaskNo(String taskNum) {
-        //exception: taskNum is not number, or containing non-numerical value
         return Integer.parseInt(taskNum);
     }
 
