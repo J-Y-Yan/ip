@@ -38,6 +38,8 @@ public class CommandType {
         case "bye":
             command = new ByeCommand();
             break;
+        case "found":
+            break;
         default:
             throw new DukeException();
         }
